@@ -168,6 +168,7 @@ body {
 
   main{
     background: #FAFAFA;
+    padding-bottom: 120px;
   }
 
   .block__a{
@@ -343,4 +344,77 @@ body {
     line-height: 20px;
   }
   
+  footer{
+    background: #032048;
+  }
+
+  .footer-position{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+
+  .footer__contacts__number{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 17px;
+  }
+
+  .footer__contacts .logo{
+    margin-bottom: 27px;
+  }
+
+  .footer__contacts__mail{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .footer__contacts__icons img{
+    margin-right: 13px;
+  }
+
+  .footer__contacts__icons{
+    margin-bottom: 48px;
+  }
+
+  .footer__contacts__text{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 12px;
+  }
+
+  .footer__complex__title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;    
+    margin-bottom: 21px;
+  }
+
+  .footer__complex__subtitle{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Inter;
+    font-size: 14px;    
+
+  }
+
+  .footer__complex__text{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Inter;
+    font-size: 14px; 
+    margin-bottom: 20px;  
+  }
+
+  .footer__representativeOffices{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__representativeOffices2{
+    margin-top: 50px;
+  }
+
 
