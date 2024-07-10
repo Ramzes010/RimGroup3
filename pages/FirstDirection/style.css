@@ -31,8 +31,6 @@ body {
     width: 0;
   }
 
-  css
-
   .block__module {
       opacity: 0;
       transform: translateY(50px);
@@ -60,6 +58,10 @@ body {
           opacity: 1;
           transform: translateY(0);
       }
+  }
+
+  #killMargin{
+    margin: 0;
   }
 
 .container {
@@ -218,39 +220,50 @@ body {
 
 /* анимация блока */
 .block__module {
-    width: 100%;
-    height: 430px;
-    padding-top: 60px;
-    margin-bottom: 48px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-    opacity: 0; /* Скрываем блок до анимации */
-    transform: translateY(20px); /* Смещаем блок вниз до анимации */
-    transition: opacity 1s, transform 1s; /* Плавные переходы */
+  width: 100%;
+  height: 430px;
+  padding-top: 60px;
+  margin-bottom: 48px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+  opacity: 0; /* Скрываем блок до анимации */
+  transform: translateY(20px); /* Смещаем блок вниз до анимации */
+  transition: opacity 1s, transform 1s; /* Плавные переходы */
 }
 
 #block__module__img-1, #block__module__img-2, #block__module__img-3 {
-    background-repeat: no-repeat;     
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-size 0.5s ease-in-out; /* Плавные переходы для фона */
 }
 
 #block__module__img-1 {
-    background-image: url(../../img/modules/module_1.png);
+  background-image: url(../../img/modules/module_1.png);
 }
 
 #block__module__img-2 {
-    background-image: url(../../img/modules/module_2.png);
+  background-image: url(../../img/modules/module_2.png);
 }
 
 #block__module__img-3 {
-    background-image: url(../../img/modules/module_3.png);
+  background-image: url(../../img/modules/module_3.png);
 }
 
-#block__module__img-1:hover, #block__module__img-2:hover, #block__module__img-3:hover {
-    transform: scale(1.05);
+#block__module__img-1:hover, 
+#block__module__img-2:hover, 
+#block__module__img-3:hover, 
+#block__module__img-4:hover,
+#block__module__img-5:hover,
+#block__module__img-6:hover,
+#block__module__img-7:hover,
+#block__module__img-8:hover,
+#block__module__img-9:hover,
+#block__module__img-10:hover,
+#block__module__img-11:hover{
+  background-size: 110% ; /* Увеличиваем только фон */
+  transition: 0.5s ease-in-out;
 }
 
 .block__module__title,
@@ -266,14 +279,16 @@ body {
     top: 60px;
     font-size: 24px;
     opacity: 0;
-    transition: opacity 1s, transform 1s;
+    transform: translateY(20px); /* Смещение текста вниз до анимации */
+    transition: opacity 1s, transform 1s; /* Плавные переходы */
 }
 
 .block__module__subtitle {
     top: 140px;
     font-size: 16px;
     opacity: 0;
-    transition: opacity .5s 0.5s, transform 1s 0.5s; /* Задержка появления субтитра */
+    transform: translateY(20px); /* Смещение текста вниз до анимации */
+    transition: opacity 0.5s 0.5s, transform 1s 0.5s; /* Плавные переходы */
 }
 /* анимация блока */
 #block__module__img-1,#block__module__img-2,#block__module__img-3,#block__module__img-4,#block__module__img-5,#block__module__img-6,#block__module__img-7,#block__module__img-8,#block__module__img-9,#block__module__img-10,#block__module__img-11{
@@ -285,6 +300,7 @@ body {
 
 #block__module__img-1 {
     background-image: url(../../img/modules/module_1.png);
+    transition: background-size 0.5s ease-in-out;
 }
 
 #block__module__img-1:hover{

@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.forEach((element, index) => {
         setTimeout(() => {
             element.classList.add('animate');
-        }, (index + 1) * 100); // Задержка в 500ms между анимациями элементов
+        }, (index + 1) * 100); // Задержка в 100ms между анимациями элементов
     });
 });
