@@ -164,6 +164,11 @@ body {
     margin-left: 20px;
   }
 
+  .header__order a:hover{
+    background-color: #CD5504;
+    animation: fade-in-up 0.8s ease-out forwards;
+  }
+
   main{
     background: #FAFAFA;
     padding-bottom: 120px;
