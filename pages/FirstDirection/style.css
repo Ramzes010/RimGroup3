@@ -295,6 +295,14 @@ body {
     transform: translateY(20px); /* Смещение текста вниз до анимации */
     transition: opacity 0.5s 0.5s, transform 1s 0.5s; /* Плавные переходы */
 }
+
+.block__module__subtitle2 {
+  top: 140px;
+  font-size: 16px;
+  opacity: 0;
+  transform: translateY(20px); /* Смещение текста вниз до анимации */
+  transition: opacity 0.5s 0.5s, transform 1s 0.5s; /* Плавные переходы */
+}
 /* анимация блока */
 #block__module__img-1,#block__module__img-2,#block__module__img-3,#block__module__img-4,#block__module__img-5,#block__module__img-6,#block__module__img-7,#block__module__img-8,#block__module__img-9,#block__module__img-10,#block__module__img-11{
     background-repeat: no-repeat;     
