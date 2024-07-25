@@ -91,6 +91,8 @@ body {
     font-size: 14px;    
 }
 
+
+
 header{
     background-color: white;
     padding-bottom: 16px;
@@ -101,7 +103,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 16px 0;}
+    margin: 16px 0;
+}
 
 .header-position img{
     margin-right: 50px;
@@ -183,10 +186,10 @@ header{
   }
 
   main{
-    /* background-image: url(img/background.png);
+    background-image: url(img/background.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;*/
+    background-size: cover;
     padding-top: 50px; 
   }
 
