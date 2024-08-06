@@ -76,6 +76,9 @@ body {
     height: 100%;
     width: 100%;
 }
+
+/* Шапка */
+
 .sub__header-position{
     display: flex;
     justify-content: space-between;
@@ -197,237 +200,120 @@ body {
     animation: fade-in-up 0.8s ease-out forwards;
   }
 
-  main{
-    padding: 32px 0 120px 0;
-    background: #FAFAFA;    
-  }
+  /* Главвный блок */
 
-  .block__a{
-    display: flex;
-    align-items: center;
-    margin-bottom: 48px;
-  }
 
-  .block__a a{
-    color: rgb(123, 142, 151);
-    font-family: Inter;
-    font-size: 14px; 
-    margin: 0 10px;  
-  }
-
-  .block__title{
-    color: rgb(0, 17, 28);
-    font-family: RoadRadio;
-    font-size: 48px;
-    line-height: 48px; 
-    margin-bottom: 48px;   
-  }
-
-/* анимация блока */
-.block__module {
-  width: 100%;
-  height: 430px;
-  padding-top: 60px;
-  margin-bottom: 48px;
-  overflow: hidden;
-  border-radius: 20px;
-  position: relative;
-  opacity: 0; /* Скрываем блок до анимации */
-  transform: translateY(20px); /* Смещаем блок вниз до анимации */
-  transition: opacity 1s, transform 1s; /* Плавные переходы */
-}
-
-#block__module__img-1, #block__module__img-2, #block__module__img-3 {
+.module{
+  width: 1800px;
+  height: 688px;
+  padding: 136px 0 0 255px;
+  background-image: url(../../img/modules/firstDirection.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  transition: background-size 0.5s ease-in-out; /* Плавные переходы для фона */
+  margin-bottom: 120px;
 }
 
-#block__module__img-1 {
-  background-image: url(../../img/modules/module_1.png);
+.module__container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;    
 }
 
-#block__module__img-2 {
-  background-image: url(../../img/modules/module_2.png);
+.module__content {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
-#block__module__img-3 {
-  background-image: url(../../img/modules/module_3.png);
+.module__title{
+  color: #FFF;
+  font-family: RoadRadio;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 24px;  
 }
 
-#block__module__img-1:hover, 
-#block__module__img-2:hover, 
-#block__module__img-3:hover, 
-#block__module__img-4:hover,
-#block__module__img-5:hover,
-#block__module__img-6:hover,
-#block__module__img-7:hover,
-#block__module__img-8:hover,
-#block__module__img-9:hover,
-#block__module__img-10:hover,
-#block__module__img-11:hover{
-  background-size: 110% ; /* Увеличиваем только фон */
-  transition: 0.5s ease-in-out;
+.module__text{
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal; 
+  margin-bottom: 48px;
 }
 
-.block__module__title,
-.block__module__subtitle {
-    position: absolute;
-    left: 20px;
-    right: 20px;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+.module__link{
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;  
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #FF6700;
+  border-radius: 15px;  
 }
 
-.block__module__title {
-    top: 60px;
-    font-size: 24px;
-    opacity: 0;
-    transform: translateY(20px); /* Смещение текста вниз до анимации */
-    transition: opacity 1s, transform 1s; /* Плавные переходы */
+  main{
+    padding: 30px 0 120px 0;
+    background: #FAFAFA;    
+  }
+
+.title{
+  display: inline-block;
+  color: #FFF;
+  font-family: RoadRadio;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 24px 30px;  
+  background-color: #FF6700;
+  border-radius: 15px;
 }
 
-.block__module__subtitle {
-    top: 140px;
-    font-size: 16px;
-    opacity: 0;
-    transform: translateY(20px); /* Смещение текста вниз до анимации */
-    transition: opacity 0.5s 0.5s, transform 1s 0.5s; /* Плавные переходы */
-}
+.categorias__parent {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 13px;
 
-.block__module__subtitle2 {
-  top: 140px;
-  font-size: 16px;
-  opacity: 0;
-  transform: translateY(20px); /* Смещение текста вниз до анимации */
-  transition: opacity 0.5s 0.5s, transform 1s 0.5s; /* Плавные переходы */
-}
-/* анимация блока */
-#block__module__img-1,#block__module__img-2,#block__module__img-3,#block__module__img-4,#block__module__img-5,#block__module__img-6,#block__module__img-7,#block__module__img-8,#block__module__img-9,#block__module__img-10,#block__module__img-11{
-    background-repeat: no-repeat;     
-    background-position: center;
-    background-size: cover;
-    transition: transform 0.3s ease-in-out;
-}
-
-#block__module__img-1 {
-    background-image: url(../../img/modules/module_1.png);
-    transition: background-size 0.5s ease-in-out;
-}
-
-#block__module__img-1:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
   }
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_1.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div2 { grid-area: 1 / 2 / 2 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_2.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div3 { grid-area: 1 / 3 / 2 / 4; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_3.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div4 { grid-area: 2 / 1 / 3 / 2; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_4.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div5 { grid-area: 2 / 2 / 3 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_5.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div6 { grid-area: 2 / 3 / 3 / 4; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_6.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div7 { grid-area: 3 / 1 / 4 / 2; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_7.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div8 { grid-area: 3 / 2 / 4 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_8.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div9 { grid-area: 3 / 3 / 4 / 4; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_9.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div10 { grid-area: 4 / 1 / 5 / 3; width: 563px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_10.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div11 { grid-area: 4 / 3 / 5 / 4; width: 714px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_11.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
 
-  #block__module__img-2{
-    background-image: url(../../img/modules/module_2.png);
-  }
-
-  #block__module__img-2:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-3{
-    background-image: url(../../img/modules/module_3.png); 
-  }
-
-  #block__module__img-3:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-4{
-    background-image: url(../../img/modules/module_4.png); 
-  }
-
-  #block__module__img-4:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-5{
-    background-image: url(../../img/modules/module_5.png);
-  }
-
-  #block__module__img-5:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-6{
-    background-image: url(../../img/modules/module_6.png);
-  }
-
-  #block__module__img-6:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-7{
-    background-image: url(../../img/modules/module_7.png);
-  }
-
-  #block__module__img-7:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-8{
-    background-image: url(../../img/modules/module_8.png);
-  }
-
-  #block__module__img-8:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-9{
-    background-image: url(../../img/modules/module_9.png); 
-  }
-
-  #block__module__img-9:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-10{
-    background-image: url(../../img/modules/module_10.png);   
-  }
-
-  #block__module__img-10:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  #block__module__img-11{
-    background-image: url(../../img/modules/module_11.png);
-  }
-
-  #block__module__img-11:hover{
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.05);
-  }
-
-  .block__module__title{
-    color: rgb(255, 255, 255);
-    font-family: RoadRadio;
-    font-size: 48px;
-    line-height: 45px;
-    text-transform: uppercase;   
-    padding-left: 50px;
-  }
-
-  .block__module__subtitle{
-    color: rgb(255, 255, 255);
+  .categorias__title{
+    color: #FFF;
     font-family: Inter;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-    margin: 20px 0 0 50px;   
+    font-size: 29px;
+    font-weight: 600;
+    line-height: normal; 
+    margin: 264px 0 0 30px;   
   }
+
+
+
+
+
+
+
+
+
+
+
+  /* Подвал */
+
 
   footer{
     background: #032048;
