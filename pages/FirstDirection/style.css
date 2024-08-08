@@ -16,6 +16,10 @@
   margin-bottom: 48px;
 }
 
+#mb80{
+  margin-bottom: 80px;
+}
+
 #mt20{
   margin-top: 150px;
 }
@@ -83,7 +87,7 @@ body {
 .container {
     padding: 0 10px;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1290px;
     margin: 0 auto;    
 }
 
@@ -91,6 +95,19 @@ body {
     max-width: 100%;
     height: 100%;
     width: 100%;
+}
+
+.container-2 {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1540px;
+  margin: 0 auto;    
+}
+
+.content-2 {
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /* Шапка */
@@ -315,26 +332,27 @@ body {
 
 .parent{
   margin-bottom: 150px;
+  width: 1290px;
 }
 
 .categorias__parent {
   display: flex;
-  gap: 13px;
+  justify-content: space-between;
   margin-bottom: 13px;
   
   }
   
-  .div1 { grid-area: 1 / 1 / 2 / 2; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_1.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div2 { grid-area: 1 / 2 / 2 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_2.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div3 { grid-area: 1 / 3 / 2 / 4; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_3.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div4 { grid-area: 2 / 1 / 3 / 2; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_4.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div5 { grid-area: 2 / 2 / 3 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_5.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div6 { grid-area: 2 / 3 / 3 / 4; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_6.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div7 { grid-area: 3 / 1 / 4 / 2; width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_7.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div8 { grid-area: 3 / 2 / 4 / 3; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_8.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div9 { grid-area: 3 / 3 / 4 / 4; width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_9.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div10 { grid-area: 4 / 1 / 5 / 3; width: 563px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_10.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
-  .div11 { grid-area: 4 / 3 / 5 / 4; width: 714px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_11.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div1 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_1.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div2 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_2.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div3 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_3.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div4 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_4.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div5 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_5.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div6 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_6.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div7 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_7.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div8 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_8.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div9 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_9.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div10 { width: 563px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_10.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
+  .div11 { width: 714px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_11.png); background-repeat: no-repeat; background-position: center; background-size: cover;}
 
   .categorias__title{
     color: #FFF;
@@ -506,6 +524,7 @@ body {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  width: 1290px;
   }
 
 
@@ -571,6 +590,69 @@ body {
     background: linear-gradient(90deg, #009EE3 0%, #004E9E 100%);
     padding: 24px 30px;
     margin: 150px 0 48px 0;
+  }
+
+  .factory{
+    display: flex;
+    border-radius: 35px;
+    background: var(--B2, #EEF0F3);
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;  
+    padding-top: 130px;
+  }
+
+  .factory__block{
+    border-radius: 20px;
+    background:  #FF6700;
+    width: 1290px;
+    margin-bottom: 20px;
+  }
+
+  .factory__block__number{
+    position: relative;
+    left: 1090px;
+    bottom: 35px;
+    display: inline-block;
+    color:  #00111C;
+    font-family: RoadRadio;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal; 
+    border-radius: 8px;
+    background:  #FFF;    
+    padding: 12px  24px;  
+
+  }
+
+  .factory__block__title{
+    color:  #FFF;
+    font-family: RoadRadio;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;  
+    margin: 0 0 48px 60px;  
+  }
+
+  .factory__block__subtitle{
+    color: var(--White, #FFF);
+    font-family: RoadRadio;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;    
+    margin: 0 0 48px 60px; 
+  }
+
+  .factory__img{
+    margin-bottom: 132px;
+  }
+
+  .factory__img img{
+    margin-bottom: 20px;
+  }
+
+  .img-position img{
+    margin-right: 20px;
   }
 
   /* Подвал */
