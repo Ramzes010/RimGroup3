@@ -24,6 +24,10 @@
   margin-top: 150px;
 }
 
+#center{
+  text-align: center;
+}
+
 h1,h2,h3,h4,h5,h6 {
     margin: 0;
     padding: 0;
@@ -297,6 +301,19 @@ body {
 
 .title{
   display: inline-block;
+  color: #FFF;
+  font-family: RoadRadio;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 24px 30px;  
+  background-color: #FF6700;
+  border-radius: 15px;
+}
+
+.title__center h2{
+  display: flex;
+  justify-content: center;
   color: #FFF;
   font-family: RoadRadio;
   font-size: 48px;
@@ -653,6 +670,15 @@ body {
 
   .img-position img{
     margin-right: 20px;
+  }
+
+  .warranty__title{
+    color:#00111C;
+    text-align: center;
+    font-family: RoadRadio;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;    
   }
 
   /* Подвал */
