@@ -345,7 +345,7 @@ body {
 }
 
 #title{
-  margin: 150px 0;
+  margin: 150px 0 48px 0;
 }
 
 .subtitle{
@@ -366,6 +366,8 @@ body {
   margin-top: 10px;
 
 }
+
+/* Parent */
 
 .parent{
   margin-bottom: 150px;
@@ -436,6 +438,52 @@ body {
     line-height: normal;        
   }
 
+  /* Parent animate */
+  .title {
+    opacity: 0;
+    transform: translateX(-50px); /* Сдвиг влево */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.title.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.parent {
+    opacity: 0;
+    transform: translateX(-50px); /* Сдвиг влево */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.parent.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.categorias__parent > div {
+    opacity: 0;
+    transform: translateX(100px); /* Сдвиг вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.categorias__parent > div.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.categorias__title {
+  opacity: 0;
+  transform: translateX(-20px); /* Сдвиг влево */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.categorias__title.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+  /* Parent animate */
+  /* Presentation */
   .presentation{
     width: 1290px;
     height: 553px;
@@ -466,6 +514,42 @@ body {
   .presentation__img img{
     margin-top: 48px;
   }
+
+  /* Presentation animate */
+  .presentation {
+    background-color: #f0f0f0; /* Серый фон */
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.presentation__content {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation__content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.presentation__img {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation__img.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+  /* Presentation animate */
 
   /* Дорожная карта */
 
@@ -550,6 +634,52 @@ body {
     margin-top: 70px;
   }
 
+  /* Дорожная карта */
+  /* Дорожная карта animate */
+  .roadMap {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.roadMap.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.roadMap__title {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.roadMap__title.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.trend {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.trend.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.roadMap__img {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.roadMap__img.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* Дорожная карта animate */
 /* ПРОИЗВОДСТВенно-технический отдел */
 
 
@@ -616,6 +746,64 @@ body {
     padding: 33px 0 33px 10px;
   }
 
+   /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
+   .info-content__parent {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.info-content__parent.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.info-content__img img {
+    opacity: 0;
+    transform: translateX(100px); /* Смещение вправо */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.info-content__img img.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+   /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
+/* zoomCursor */
+
+.zoom-container {
+  position: relative;
+  display: inline-block;
+}
+
+.zoom-container .zoom-img {
+  width: 100%;
+  height: auto;
+}
+
+.zoom-lens {
+  position: absolute;
+  border: 2px solid #d4d4d4;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  display: none;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+/* Лупа отображается при наведении курсора */
+.zoom-container:hover .zoom-lens {
+  display: block;
+  cursor: none;
+}
+
+.zoom-container:hover .zoom-img {
+  cursor: none;
+}
+/* zoomCursor */
   .gradient__title{
     display: inline-block;
     color:  #FFF;
@@ -628,6 +816,8 @@ body {
     padding: 24px 30px;
     margin: 150px 0 48px 0;
   }
+
+  /* Factory */
 
   .factory{
     display: flex;
@@ -691,6 +881,10 @@ body {
   .img-position img{
     margin-right: 20px;
   }
+
+    /* Factory animate */
+    
+    /* Factory animate */
 
   .warranty{
     margin: 48px 0;
@@ -839,10 +1033,168 @@ body {
 
       /* форум */
 
-      .forum{
+      .ask{
+        width: 1290px;
+        height: 402px;
+        background-image: url(../../img/ask.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         border-radius: 24px;
-        background: #174892;     
+        padding: 77px 70px;
       }
+
+      .ask__position{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .ask__text__title{
+        color: #FFF;
+        font-family: RoadRadio;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 77px;
+        text-transform: uppercase;       
+      }
+
+      .ask__text__subtitle{
+        color: #FFF;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;  
+        margin-top: 24px;      
+      }
+
+    .form-container input, .form-container select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+        border: none;
+    }
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #fff;
+        color: #004080;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .form-container button:hover {
+        background-color: #ccc;
+    }
+    .form-container p {
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .form-container a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+
+    .phone-input-container {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 5px;
+      border-radius: 8px;
+      width: 304px;
+      margin-right: 9px;
+  }
+  .phone-input-container select {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      appearance: none;
+      margin-right: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      cursor: pointer;
+  }
+  .phone-input-container input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0);
+      width: 200px;
+      outline: none;
+  }
+  .phone-input-container input::placeholder {
+    color: #CED3D6;
+  }
+  .phone-input-container select option {
+      color: #000;
+  }
+
+  .phone-input-name::placeholder {
+    color: #CED3D6; /* Измените цвет на нужный */
+    opacity: 1; /* Убедитесь, что прозрачность установлена на 1 для точного цвета */
+}
+
+  .phone-input-name{
+    border-radius: 8px;
+    border: 1px rgba(206, 211, 214, 0.50);
+    background: rgba(255, 255, 255, 0.08);
+    color: #CED3D6;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+    width: 589px;
+  }
+
+  .phone-input-email{
+    border-radius: 8px;
+    border: 1px rgba(206, 211, 214, 0.50);
+    background: rgba(255, 255, 255, 0.08);
+    color: #CED3D6;
+    font-family: Inter;
+    font-size: 16px;    
+    padding: 16px 20px;
+    width: 276px;  
+  }
+
+  .phone-input-email::placeholder{
+    color: #CED3D6; /* Измените цвет на нужный */
+    opacity: 1; /* Убедитесь, что прозрачность установлена на 1 для точного цвета */
+  }
+
+  .phone-input-position{
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .link__submit{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400; 
+    border-radius: 8px;
+    background: #FFF;   
+    padding: 12px 175px;  
+  }
+
+  .doc, .doc a{
+    margin-top: 26px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;    
+  }
+
+  .doc a{
+    text-decoration-line: underline;
+  }
 
   /* Подвал */
 
@@ -919,7 +1271,20 @@ body {
   .footer__representativeOffices2{
     margin-top: 50px;
   }
-  
+
+  /* Анимация */
+  .animate {
+    opacity: 0;
+    transform: translateX(100px); /* Сдвиг вправо на 100px */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Окончательное состояние, когда элементы видимы */
+.animate.visible {
+    opacity: 1;
+    transform: translateX(0); /* Возвращаем в исходное положение */
+}
+    /* Анимация */
   @media (max-width: 1400px) {
 
         
