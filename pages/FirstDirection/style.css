@@ -837,6 +837,13 @@ body {
         margin: 0 0 24px 24px;      
       }
 
+      /* форум */
+
+      .forum{
+        border-radius: 24px;
+        background: #174892;     
+      }
+
   /* Подвал */
 
 
