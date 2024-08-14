@@ -379,6 +379,9 @@ body {
   justify-content: space-between;
   margin-bottom: 13px;
   overflow: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
   }
 
 
@@ -395,13 +398,8 @@ body {
   .div10 { width: 563px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_10.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
   .div11 { width: 714px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_11.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
 
-  .categorias__bgImg{
-    
-  }
 
-  /* Scale */
-  
-  /* Scale */
+
   .categorias__title{
     color: #FFF;
     font-family: Inter;
@@ -448,50 +446,15 @@ body {
   }
 
   /* Parent animate */
-  .title {
-    opacity: 0;
-    transform: translateX(-50px); /* Сдвиг влево */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.title.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
 
-.parent {
-    opacity: 0;
-    transform: translateX(-50px); /* Сдвиг влево */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.parent.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.categorias__parent > div {
-    opacity: 0;
-    transform: translateX(100px); /* Сдвиг вправо */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.categorias__parent > div.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.categorias__title {
-  opacity: 0;
-  transform: translateX(-20px); /* Сдвиг влево */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.categorias__title.visible {
-  opacity: 1;
-  transform: translateX(0);
+  .categorias__parent > a, .categorias__parent > div {
+    opacity: 0; /* Скрыть элементы по умолчанию */
+    transform: translateX(100%); /* Смещение вправо */
 }
   /* Parent animate */
+
+
   /* Presentation */
   .presentation{
     width: 1290px;

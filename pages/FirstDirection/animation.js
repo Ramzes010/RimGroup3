@@ -36,74 +36,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Parent animate
+document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll('.categorias__parent > a, .categorias__parent > div');
 
-document.addEventListener("DOMContentLoaded", () => {
-    const title = document.querySelector('.title');
-    const parent = document.querySelector('.parent');
-    const children = document.querySelectorAll('.categorias__parent > div');
-    const titles = document.querySelectorAll('.categorias__title');
+    containers.forEach((container, index) => {
+        container.style.opacity = '0';
+        container.style.transform = 'translateX(100%)';
+        container.style.transition = 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out';
 
-    const observerOptions = {
-        threshold: 0.2, // Когда 20% элемента будет видно, сработает анимация
-    };
-
-    const titleObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                title.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    const parentObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                parent.classList.add('visible');
-                observer.unobserve(entry.target);
-
-                // Запускаем анимацию для дочерних элементов
-                children.forEach((child, index) => {
-                    setTimeout(() => {
-                        child.classList.add('visible');
-                    }, (index + 1) * 70); // Задержка 70ms между элементами
-                });
-
-                // Добавляем класс к "categorias__title" после завершения анимации всех контейнеров
-                setTimeout(() => {
-                    titles.forEach(title => {
-                        title.classList.add('visible');
-                    });
-                }, (children.length + 1) * 70); // Задержка после завершения всех контейнеров
-            }
-        });
-    }, observerOptions);
-
-    titleObserver.observe(title);
-    parentObserver.observe(parent);
-
-    // Проверка на видимость элементов сразу после загрузки
-    if (isElementInViewport(title)) {
-        title.classList.add('visible');
-        titleObserver.unobserve(title);
-    }
-
-    if (isElementInViewport(parent)) {
-        parent.classList.add('visible');
-        parentObserver.unobserve(parent);
-        // Запуск анимации для дочерних элементов и заголовков
-        children.forEach((child, index) => {
-            setTimeout(() => {
-                child.classList.add('visible');
-            }, (index + 1) * 150);
-        });
         setTimeout(() => {
-            titles.forEach(title => {
-                title.classList.add('visible');
-            });
-        }, (children.length + 1) * 100);
-    }
+            container.style.opacity = '1';
+            container.style.transform = 'translateX(0)';
+        }, index * 300); // Задержка появления каждого контейнера
+    });
 });
+
+// Parent animate
+
+
+
 
 // presentation animate
 document.addEventListener("DOMContentLoaded", () => {
@@ -112,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const image = document.querySelector('.presentation__img');
 
     const observerOptions = {
-        threshold: 0.2, // Анимация сработает, когда 50% элемента будет видно
+        threshold: 0.2, // Анимация сработает, когда 20% элемента будет видно
     };
 
     const presentationObserver = new IntersectionObserver((entries, observer) => {
