@@ -348,6 +348,31 @@ body {
   margin: 150px 0 48px 0;
 }
 
+/* title animate */
+#title-animation {
+  display: inline-block;
+  color: #FFF;
+  font-family: RoadRadio;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 24px 30px;  
+  background-color: #FF6700;
+  border-radius: 15px;
+  
+  /* Начальное состояние для анимации */
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+/* Класс для запуска анимации */
+#title-animation.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* title animate */
+
 .subtitle{
   display: block;
   width: 878px;
@@ -369,36 +394,127 @@ body {
 
 /* Parent */
 
-.parent{
+.parent {
   margin-bottom: 150px;
   width: 1290px;
+  position: relative;
+  overflow: hidden;
 }
 
 .categorias__parent {
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
-  overflow: hidden;
   opacity: 0;
   transform: translateX(100%);
   transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.categorias__title,
+.div11__title,
+.div11__subtitle,
+.div11__link {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.categorias__b{
+    padding: 264px 0 0 30px;   
+}
+
+#categorias__b{
+  padding: 325px 0 0 30px;   
+}
+  
+  .div1 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div2 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div3 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div4 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div5 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div6 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div7 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div8 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div9 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div10 { width: 563px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div11 { width: 714px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+
+  .div1 .categorias__b, .div2 .categorias__b, .div3 .categorias__b, .div4 .categorias__b, .div5 .categorias__b, .div6 .categorias__b, .div7 .categorias__b, .div8 .categorias__b, .div9 .categorias__b, .div10 .categorias__b, .div11 .categorias__b{
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: cover;
+    transition: 1s; /* Время эффекта */
+  }
+
+  .div1 .categorias__b:hover, .div2 .categorias__b:hover, .div3 .categorias__b:hover, .div4 .categorias__b:hover, .div5 .categorias__b:hover, .div6 .categorias__b:hover, .div7 .categorias__b:hover, .div8 .categorias__b:hover, .div9 .categorias__b:hover, .div10 .categorias__b:hover{
+    transform: scale(1.075);
   }
 
 
-  
-  .div1 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_1.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div2 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_2.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div3 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_3.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div4 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_4.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div5 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_5.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div6 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_6.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div7 { width: 536px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_7.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div8 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_8.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div9 { width: 364px; height: 350px; border-radius: 15px; background-image: url(../../img/modules/categories_9.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div10 { width: 563px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_10.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
-  .div11 { width: 714px; height: 390px; border-radius: 15px; background-image: url(../../img/modules/categories_11.png); background-repeat: no-repeat; background-position: center; background-size: cover; transition: 1s;}
+  .div1 .categorias__b{
+    background-image: url(../../img/modules/categories_1.png);
+    width: px;
+    height: 350px; 
+  }
 
+  .div2 .categorias__b{
+    background-image: url(../../img/modules/categories_2.png);
+    width: 364px;
+    height: 350px; 
+  }
 
+  .div3 .categorias__b{
+    background-image: url(../../img/modules/categories_3.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div4 .categorias__b{
+    background-image: url(../../img/modules/categories_4.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div5 .categorias__b{
+    background-image: url(../../img/modules/categories_5.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div6 .categorias__b{
+    background-image: url(../../img/modules/categories_6.png);
+    width: 536px;
+    height: 350px; 
+  }
+
+  .div7 .categorias__b{
+    background-image: url(../../img/modules/categories_7.png);
+    width: 536px;
+    height: 350px; 
+  }
+
+  .div8 .categorias__b{
+    background-image: url(../../img/modules/categories_8.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div9 .categorias__b{
+    background-image: url(../../img/modules/categories_9.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div10 .categorias__b{
+    background-image: url(../../img/modules/categories_10.png);
+    width: 563px;
+    height: 390px; 
+  }
+
+  .div11{
+    background-image: url(../../img/modules/categories_11.png);
+    width: 714px;
+    height: 390px; 
+  }
 
   .categorias__title{
     color: #FFF;
@@ -406,11 +522,6 @@ body {
     font-size: 29px;
     font-weight: 600;
     line-height: normal; 
-    margin: 264px 0 0 30px;   
-  }
-
-  #categorias__title{
-    margin: 325px 0 0 30px;
   }
 
   .div11__title{
@@ -448,10 +559,7 @@ body {
   /* Parent animate */
 
 
-  .categorias__parent > a, .categorias__parent > div {
-    opacity: 0; /* Скрыть элементы по умолчанию */
-    transform: translateX(100%); /* Смещение вправо */
-}
+
   /* Parent animate */
 
 
@@ -719,7 +827,7 @@ body {
   }
 
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
-   
+
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
 
 /* Just zoom */

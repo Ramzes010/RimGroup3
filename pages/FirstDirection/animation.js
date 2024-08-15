@@ -35,22 +35,57 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// title animate
+document.addEventListener("DOMContentLoaded", function () {
+    const title = document.getElementById('title-animation');
+  
+    function checkVisibility() {
+      const rect = title.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0 && !title.classList.contains('visible')) {
+        // Добавляем класс 'visible', чтобы запустить анимацию
+        title.classList.add('visible');
+      }
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Проверка при загрузке страницы
+  });
+// title animate
+
 // Parent animate
-document.addEventListener("DOMContentLoaded", function() {
-    const containers = document.querySelectorAll('.categorias__parent > a, .categorias__parent > div');
-
-    containers.forEach((container, index) => {
-        container.style.opacity = '0';
-        container.style.transform = 'translateX(100%)';
-        container.style.transition = 'transform 0.6s ease-in-out, opacity 0.6s ease-in-out';
-
-        setTimeout(() => {
-            container.style.opacity = '1';
+document.addEventListener("DOMContentLoaded", function () {
+    const containers = document.querySelectorAll('.categorias__parent');
+  
+    function checkVisibility() {
+      containers.forEach((container, index) => {
+        const rect = container.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0 && !container.classList.contains('visible')) {
+          // Добавляем класс 'visible', чтобы предотвратить повторное выполнение анимации
+          container.classList.add('visible');
+          
+          setTimeout(() => {
             container.style.transform = 'translateX(0)';
-        }, index * 300); // Задержка появления каждого контейнера
-    });
-});
-
+            container.style.opacity = '1';
+  
+            // После того, как контейнер появился, запускаем анимацию заголовков
+            setTimeout(() => {
+              const titles = container.querySelectorAll('.categorias__title, .div11__title, .div11__subtitle, .div11__link');
+              titles.forEach((title, i) => {
+                setTimeout(() => {
+                  title.style.opacity = '1';
+                }, i * 100); // Задержка появления заголовков внутри каждого контейнера
+              });
+            }, 800); // Задержка перед появлением заголовков после появления контейнера
+  
+          }, index * 100); // Задержка появления каждого контейнера
+        }
+      });
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Проверка при загрузке страницы
+  });
+  
 // Parent animate
 
 
@@ -160,6 +195,8 @@ document.addEventListener("DOMContentLoaded", () => {
         roadMapObserver.unobserve(roadMap);
     }
 });
+
+// ПРОИЗВОДСТВенно-технический отдел animate
 
 // ПРОИЗВОДСТВенно-технический отдел animate
 
