@@ -197,7 +197,48 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ПРОИЗВОДСТВенно-технический отдел animate
+document.addEventListener("DOMContentLoaded", function () {
+    const title = document.getElementById('animated-title2');
+    const blocks = [
+        document.getElementById('block-12'),
+        document.getElementById('block-22'),
+        document.getElementById('block-32'),
+        document.getElementById('block-42'),
+        document.getElementById('block-52')
+    ];
+    const images = [
+        document.getElementById('img-12'),
+        document.getElementById('img-22')
+    ];
+  
+    function animateBlocks(blocks) {
+        blocks.forEach((block, index) => {
+            setTimeout(() => {
+                block.classList.add('visible');
+            }, index * 70); // Задержка между анимациями блоков
+        });
+    }
 
+    function animateImages(images) {
+        images.forEach((img, index) => {
+            setTimeout(() => {
+                img.classList.add('visible');
+            }, index * 70); // Задержка между анимациями изображений
+        });
+    }
+
+    function checkVisibility() {
+        const rect = title.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0 && !title.classList.contains('visible')) {
+            title.classList.add('visible');
+            setTimeout(() => animateBlocks(blocks), 300); // Начать анимацию блоков после заголовка
+            setTimeout(() => animateImages(images), 300 + blocks.length * 70); // Начать анимацию картинок после блоков
+        }
+    }
+  
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Проверка при загрузке страницы
+});
 // ПРОИЗВОДСТВенно-технический отдел animate
 
 
