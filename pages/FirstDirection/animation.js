@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
         presentationObserver.unobserve(presentation);
     }
 });
-
+// presentation animate
 // roadMap animate
 document.addEventListener("DOMContentLoaded", () => {
     const roadMap = document.querySelector('.roadMap');
@@ -291,6 +291,52 @@ document.addEventListener("DOMContentLoaded", () => {
     // Запускаем проверку сразу на случай, если элементы уже видны при загрузке
     animateOnScroll();
 });
+
+// Architectural solutions
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById('gradient__title4');
+    const images = [
+        document.getElementById('info-content__img-4-1'),
+        document.getElementById('info-content__img-4-2'),
+        document.getElementById('info-content__img-4-3'),
+        document.getElementById('info-content__img-4-4'),
+        document.getElementById('info-content__img-4-5'),
+        document.getElementById('info-content__img-4-6'),
+        document.getElementById('info-content__img-4-7'),
+        document.getElementById('info-content__img-4-8'),
+        // Добавьте остальные элементы по ID
+    ];
+
+    const observerOptions = {
+        threshold: 0.2, // Анимация сработает, когда 20% элемента будет видно
+    };
+
+    const titleObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Анимация заголовка
+                title.classList.add('visible');
+                observer.unobserve(entry.target); // Остановить наблюдение после срабатывания анимации
+            }
+        });
+    }, observerOptions);
+
+    titleObserver.observe(title);
+
+    const imagesObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 100); // Задержка в 150ms для каждого изображения
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    images.forEach(img => imagesObserver.observe(img));
+});
+// Architectural solutions
 
 // Проектный ИНСТИТУТ animate
 

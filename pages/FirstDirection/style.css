@@ -837,6 +837,52 @@ body {
   }
 
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
+
+   /* Architectural solutions animate */
+/* Начальное состояние элементов перед анимацией */
+#gradient__title4 {
+  position: relative;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+#info-content__img-4-1, 
+#info-content__img-4-2, 
+#info-content__img-4-3, 
+#info-content__img-4-4, 
+#info-content__img-4-5, 
+#info-content__img-4-6, 
+#info-content__img-4-7, 
+#info-content__img-4-8 
+/* Добавьте остальные ID */ {
+  position: relative;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+}
+
+/* Видимое состояние для заголовка и изображений */
+#gradient__title4.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#info-content__img-4-1.visible,
+#info-content__img-4-2.visible,
+#info-content__img-4-3.visible,
+#info-content__img-4-4.visible,
+#info-content__img-4-5.visible,
+#info-content__img-4-6.visible,
+#info-content__img-4-7.visible,
+#info-content__img-4-8.visible
+/* Добавьте остальные ID */ {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+   /* Architectural solutions animate */
+
    #animated-title2 {
     /* Уникальные стили для заголовка с ID animated-title2 */
     transform: translateX(-100%);
@@ -872,6 +918,24 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+
+  /* Zoom эффект при наведении на изображение */
+.zoom-container {
+  overflow: hidden; /* Скрывает части изображения, которые выходят за пределы контейнера */
+  position: relative;
+  border-radius: 20px;
+}
+
+.zoom-img {
+  border-radius: 20px;
+  transition: transform 0.5s ease; /* Плавный переход для увеличения изображения */
+}
+
+.zoom-container:hover .zoom-img {
+  transform: scale(1.1); /* Увеличение изображения до 110% при наведении */
+}
+
+
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
    /* Проектный ИНСТИТУТ animate */
    /* Исходные стили перед анимацией */
