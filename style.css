@@ -3,7 +3,6 @@
     text-decoration: none;
     list-style: none;
 }
-
 #pt{padding-top: 15px;}
 #mr{margin-right: 40px;}
 
@@ -21,13 +20,16 @@ p {
     justify-content: space-between;
 }
 
-
+body, .page {
+    overflow-x: hidden;
+}
 body {
      font-family: 'Gilroy', cursive; 
      font-size: 15px;
      line-height: 1.6;
      margin: 0;
      height: 100vh;
+     
 }
 
 ::-webkit-scrollbar {
@@ -186,7 +188,7 @@ header{
   }
 
   main{
-    background-image: url(img/background.png);
+    /* background-image: url(img/background.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -286,24 +288,28 @@ header{
 
     
 
-    /* KeyFrames */
     @keyframes slideIn {
         from {
             transform: translateX(100vw); /* Начинаем за пределами правой границы экрана */
+            opacity: 0;
         }
         to {
             transform: translateX(0);
+            opacity: 1;
         }
     }
     
     header, .parent div {
         transform: translateX(100vw); /* Начальное положение за пределами экрана */
         opacity: 0; /* Элемент невидим в начале */
+        will-change: transform, opacity;
     }
     
     header.animate, .parent div.animate {
         animation: slideIn 0.5s ease-out forwards;
         opacity: 1; /* Элемент становится видимым */
+        transform: translate3d(0, 0, 0); /* Аппаратное ускорение */
+        will-change: transform, opacity;
     }
     
     .parent {
@@ -319,14 +325,7 @@ header{
     }
     
     /* Ваши существующие стили */
-    main {
-        /* background-image: url(img/background.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        padding: 50px 0 ; */
-    }
-    
+
     .div1 { 
         grid-area: 1 / 1 / 7 / 4; 
         display: flex; 

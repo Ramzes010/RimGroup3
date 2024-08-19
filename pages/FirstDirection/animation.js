@@ -241,6 +241,59 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // ПРОИЗВОДСТВенно-технический отдел animate
 
+// Проектный ИНСТИТУТ animate
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById('title');
+    const blocks = [
+        document.getElementById('info-content__block-13'),
+        document.getElementById('info-content__block-23'),
+        document.getElementById('info-content__block-33')
+    ];
+    const images = [
+        document.getElementById('info-content__img-13'),
+        document.getElementById('info-content__img-23'),
+        document.getElementById('info-content__img-33')
+    ];
+
+    function animateOnScroll() {
+        const titlePosition = title.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (titlePosition < screenHeight) {
+            // Анимация для заголовка
+            title.style.opacity = '1';
+            title.style.transform = 'translateX(0)';
+
+            // Анимация для блоков (перемещение справа налево)
+            blocks.forEach((block, index) => {
+                setTimeout(() => {
+                    block.style.opacity = '1';
+                    block.style.transform = 'translateX(0)';
+                }, (index + 1) * 70); // Задержка в 70ms для каждого блока
+            });
+
+            // Анимация для картинок (перемещение снизу вверх)
+            images.forEach((image, index) => {
+                setTimeout(() => {
+                    image.style.opacity = '1';
+                    image.style.transform = 'translateY(0)';
+                }, (blocks.length + index + 1) * 70); // Задержка для начала анимации картинок после блоков
+            });
+
+            // Удаляем обработчик события, чтобы анимация не повторялась при последующих скроллах
+            window.removeEventListener('scroll', animateOnScroll);
+        }
+    }
+
+    // Добавляем обработчик скролла
+    window.addEventListener('scroll', animateOnScroll);
+
+    // Запускаем проверку сразу на случай, если элементы уже видны при загрузке
+    animateOnScroll();
+});
+
+// Проектный ИНСТИТУТ animate
+
 
 // Функция для проверки, виден ли элемент на экране
 function isElementInViewport(el) {

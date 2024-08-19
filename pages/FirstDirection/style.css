@@ -367,6 +367,7 @@ body {
   padding: 24px 30px;  
   background-color: #FF6700;
   border-radius: 15px;
+  margin-bottom: 48px;
   
   /* Начальное состояние для анимации */
   transform: translateX(-100%);
@@ -872,6 +873,29 @@ body {
     opacity: 1;
   }
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
+   /* Проектный ИНСТИТУТ animate */
+   /* Исходные стили перед анимацией */
+   #title {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    }
+
+    #info-content__block-13, #info-content__block-23, #info-content__block-33 {
+        position: relative;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    }
+
+    #info-content__img-13, #info-content__img-23, #info-content__img-33 {
+        position: relative;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: transform 0.75s ease-out, opacity 0.75s ease-out;
+    }
+   /* Проектный ИНСТИТУТ animate */
 
 /* Just zoom */
   .justZoom{
