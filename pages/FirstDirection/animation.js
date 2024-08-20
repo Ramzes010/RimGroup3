@@ -328,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting) {
                 setTimeout(() => {
                     entry.target.classList.add('visible');
-                }, index * 100); // Задержка в 150ms для каждого изображения
+                }, index * 100); // Задержка в 100ms для каждого изображения
                 observer.unobserve(entry.target);
             }
         });
@@ -339,7 +339,60 @@ document.addEventListener("DOMContentLoaded", () => {
 // Architectural solutions
 
 // Проектный ИНСТИТУТ animate
+//  retention processes animate
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById('title-mt20');
+    const subtitle = document.getElementById('subtitle-4');
+    const imageContainer = document.getElementById('info-content__img-4');
 
+    const observerOptions = {
+        threshold: 0.2, // Анимация сработает, когда 20% элемента будет видно
+    };
+
+    const contentObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Анимация заголовка (слева направо)
+                title.classList.add('visible');
+
+                // Анимация подзаголовка (справа налево)
+                setTimeout(() => {
+                    subtitle.classList.add('visible');
+                }, 100); // Задержка в 100ms для подзаголовка
+
+                // Анимация изображения (снизу вверх)
+                setTimeout(() => {
+                    imageContainer.classList.add('visible');
+                }, 200); // Задержка в 200ms для изображения
+
+                observer.unobserve(entry.target); // Остановить наблюдение после срабатывания анимации
+            }
+        });
+    }, observerOptions);
+
+    // Наблюдение за элементами
+    contentObserver.observe(title);
+    contentObserver.observe(subtitle);
+    contentObserver.observe(imageContainer);
+});
+//  retention processes animate
+
+// Factory animate
+document.addEventListener("DOMContentLoaded", function() {
+    const factorySection = document.querySelector('.factory');
+    let animationPlayed = false;
+
+    function checkScroll() {
+        const rect = factorySection.getBoundingClientRect();
+        if (!animationPlayed && rect.top <= window.innerHeight && rect.bottom >= 0) {
+            factorySection.classList.add('mb5-active');
+            animationPlayed = true;  // Анимация запускается только один раз
+        }
+    }
+
+    window.addEventListener('scroll', checkScroll);
+});
+// Factory animate
 
 // Функция для проверки, виден ли элемент на экране
 function isElementInViewport(el) {
@@ -351,3 +404,5 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+
+// 
