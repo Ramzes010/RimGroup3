@@ -4,6 +4,8 @@
     list-style: none;
 }
 
+
+
 /* АЙдишки */
 
 #mb20{
@@ -24,6 +26,10 @@
 
 #mb150{
   margin-bottom: 150px;
+}
+
+#mt16{
+  margin-top: 16px;
 }
 
 #mt20{
@@ -272,7 +278,7 @@ body {
   width: 1800px;
   height: 688px;
   padding: 136px 0 0 255px;
-  background-image: url(../../img/modules/firstDirection.png);
+  background-image: url(../../img/second/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -441,22 +447,37 @@ body {
   .div4 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
   .div5 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
   .div6 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div7 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div8 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div7 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div8 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div8_1 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div8_2 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+  .div8_3 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
   .div9 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
   .div10 { width: 563px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
   .div11 { width: 714px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
 
-  .div1 .categorias__b, .div2 .categorias__b, .div3 .categorias__b, .div4 .categorias__b, .div5 .categorias__b, .div6 .categorias__b, .div7 .categorias__b, .div8 .categorias__b, .div9 .categorias__b, .div10 .categorias__b, .div11 .categorias__b{
+  .div1 .categorias__b, .div2 .categorias__b, .div3 .categorias__b, .div4 .categorias__b, .div5 .categorias__b, .div6 .categorias__b, .div7 .categorias__b, .div8 .categorias__b,.div8_1 .categorias__b,.div8_2 .categorias__b,.div8_3 .categorias__b, .div9 .categorias__b, .div10 .categorias__b, .div11 .categorias__b{
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: cover;
     transition: 1s; /* Время эффекта */
   }
 
-  .div1 .categorias__b:hover, .div2 .categorias__b:hover, .div3 .categorias__b:hover, .div4 .categorias__b:hover, .div5 .categorias__b:hover, .div6 .categorias__b:hover, .div7 .categorias__b:hover, .div8 .categorias__b:hover, .div9 .categorias__b:hover, .div10 .categorias__b:hover{
+  .div1 .categorias__b:hover, .div2 .categorias__b:hover, .div3 .categorias__b:hover, .div4 .categorias__b:hover, .div5 .categorias__b:hover, .div6 .categorias__b:hover, .div7 .categorias__b:hover, .div8 .categorias__b:hover, .div8_1 .categorias__b:hover, .div8_2 .categorias__b:hover,.div8_3 .categorias__b:hover, .div9 .categorias__b:hover, .div10 .categorias__b:hover{
     transform: scale(1.075);
   }
+
+  #CBdiv1{padding: 257px 0 0 30px;}
+  #CBdiv2{padding: 292px 0 0 30px;}
+  #CBdiv3{padding: 219px 0 0 30px;}
+  #CBdiv4{padding: 292px 0 0 30px;}
+  #CBdiv5{padding: 287px 0 0 30px;}
+  #CBdiv6{padding: 287px 0 0 30px;}
+  #CBdiv7{padding: 292px 0 0 30px;}
+  #CBdiv8{padding: 251px 0 0 30px}
+  #CBdiv9{padding: 287px 0 0 30px;}
+  #CBdiv10{padding: 297px 0 0 30px;}
+  #CBdiv11{padding: 251px 0 0 30px;}
 
 
   .div1 .categorias__b{
@@ -497,12 +518,30 @@ body {
 
   .div7 .categorias__b{
     background-image: url(../../img/second/Frame\ 427319025.png);
-    width: 536px;
+    width: 639px;
     height: 350px; 
   }
 
   .div8 .categorias__b{
     background-image: url(../../img/second/Frame\ 427319458.png);
+    width: 639px;
+    height: 350px; 
+  }
+
+  .div8_1 .categorias__b{
+    background-image: url(../../img/second/Frame\ 427319019.png);
+    width: px;
+    height: 350px; 
+  }
+
+  .div8_2 .categorias__b{
+    background-image: url(../../img/second/Frame\ 427319020.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div8_3 .categorias__b{
+    background-image: url(../../img/second/Frame\ 427319021.png);
     width: 364px;
     height: 350px; 
   }
@@ -514,13 +553,13 @@ body {
   }
 
   .div10 .categorias__b{
-    background-image: url(../../img/second/);
+    background-image: url(../../img/second/Frame\ 427319455.png);
     width: 563px;
     height: 390px; 
   }
 
   .div11{
-    background-image: url(../../img/second/);
+    background-image: url(../../img/modules/categories_11.png);
     width: 714px;
     height: 390px; 
   }
@@ -588,7 +627,7 @@ body {
     font-size: 40px;
     font-weight: 700;
     line-height: normal;    
-    margin: 87px 0 0 48px;
+    margin: 42px 0 0 48px;
   }
 
   .presentation__text{
@@ -597,7 +636,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;    
-    margin: 32px 0 0 48px;
+    margin: 24px 0 0 48px;
   }
 
   .presentation__img img{
