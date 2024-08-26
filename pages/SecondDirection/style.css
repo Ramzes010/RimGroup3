@@ -322,10 +322,9 @@ body {
   font-size: 20px;
   font-weight: 300;
   line-height: 32px;  
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-radius: 8px;
   background: #FF6700;
-  border-radius: 15px;  
 }
 
   main{
@@ -846,7 +845,28 @@ body {
     font-size: 20px;
     font-weight: 300;
     line-height: normal;
-    padding: 43px 0 43px 30px;    
+    padding: 43px 20px 43px 30px;
+    
+  }
+
+  #info-content__text-2{
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    /* line-height: normal;     */
+    margin-top: 20px;
+  }
+
+  #info-content__text-33{
+    color: var(--White, #FFF);
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;    
+    margin-top: 30px;
   }
 
   .info-content__img{
@@ -1339,6 +1359,145 @@ body {
         margin-top: 17px; 
         margin: 0 0 24px 24px;      
       }
+
+      /* Just text */
+      .JT__container{
+        border-radius: 25px;
+        background: var(--B2, #EEF0F3);
+        padding: 43px 50px;
+      }
+      
+      .JT__container p{
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        margin: 0;        
+      }
+
+      .JT__container img{
+        margin-top: 32px;        
+      }
+
+      .JT-position{
+        display: flex;
+      }
+
+      .JT-position p{
+        margin: 32px 0 0 48px;
+      }
+
+      .confidentiality__text{
+        margin-top: 48px;
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;        
+      }
+
+      .confidentiality__text span{
+        color: var(--Orange, #FF6700);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;        
+      }
+
+      .confidentiality__title{
+        margin-top: 32px;
+        color: var(--Orange, #FF6700);
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */        
+      }
+      .confidentiality ul li{
+        list-style: disc;
+      }
+
+      .confidentiality ul li p{
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 133.333% */
+      }
+
+      .confidentiality__title_2{
+        margin-top: 48px;
+        color: var(--text-black, #00111C);
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 100% */        
+      }
+
+      .portfolio-2__img{
+        margin-top: 48px;
+      }
+
+      .portfolio-2__img div{
+        display: flex;
+        margin-top: 20px;
+      }
+
+      .portfolio-2__img div img{
+        margin-right: 20px;
+      }
+
+      .portfolio-2__container{
+        border-radius: 25px;
+        background: var(--B2, #EEF0F3);
+        padding: 43px 33px;     
+        margin-top: 32px;  
+      }
+
+      .portfolio-2__title{
+        display: inline-block;
+        padding: 24px;
+        color: #FFF;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;  
+        border-radius: 10px;
+        background: #FB7104;      
+      }
+
+      .portfolio-2__text{
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        margin-top: 24px;        
+      }
+
+      .portfolio-2__container ul{
+        padding-left: 33px;
+        margin-top: 24px;
+      }
+
+      .portfolio-2__container ul li{
+        list-style: decimal;
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 28px; /* 133.333% */        
+      }
+      /* Just text */
 
       /* форум */
 
