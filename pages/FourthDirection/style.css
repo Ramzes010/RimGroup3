@@ -290,7 +290,7 @@ body {
   width: 1800px;
   height: 688px;
   padding: 136px 0 0 255px;
-  background-image: url(../../img/Third/bg.png);
+  background-image: url(../../img/Fourth/bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,7 +328,7 @@ body {
 }
 
 .module__link{
-  color: var(--Orange, #FF6700);
+  color: var(--White, #FFF);
   text-align: center;
   font-family: Inter;
   font-size: 20px;
@@ -336,7 +336,7 @@ body {
   font-weight: 400;
   line-height: 32px; /* 160% */
   border-radius: 8px;
-  background: var(--White, #FFF);
+  background: var(--Orange, #FF6700);
   padding: 12px 24px;
 }
 
@@ -453,80 +453,124 @@ body {
   padding: 325px 0 0 30px;   
 }
   
-  .div1 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div2 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div3 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div4 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div5 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div6 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div7 { width: 563px; height: 390px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
-  .div11 { width: 714px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div1 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div2 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div3 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div4 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div5 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div6 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div7 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div8 { width: 639px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div8_1 { width: 536px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div8_2 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div8_3 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div9 { width: 364px; height: 350px; border-radius: 15px; transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div10 { width: 563px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
+.div11 { width: 714px; height: 390px; border-radius: 15px;  transition: 1s; display: inline-block; /* Строчно-блочный элемент */overflow: hidden;}
 
-  .div1 .categorias__b, .div2 .categorias__b, .div3 .categorias__b, .div4 .categorias__b, .div5 .categorias__b, .div6 .categorias__b, .div7 .categorias__b, .div8 .categorias__b,.div8_1 .categorias__b,.div8_2 .categorias__b,.div8_3 .categorias__b, .div9 .categorias__b, .div10 .categorias__b, .div11 .categorias__b{
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: cover;
-    transition: 1s; /* Время эффекта */
-  }
+.div1 .categorias__b, .div2 .categorias__b, .div3 .categorias__b, .div4 .categorias__b, .div5 .categorias__b, .div6 .categorias__b, .div7 .categorias__b, .div8 .categorias__b,.div8_1 .categorias__b,.div8_2 .categorias__b,.div8_3 .categorias__b, .div9 .categorias__b, .div10 .categorias__b, .div11 .categorias__b{
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-size: cover;
+  transition: 1s; /* Время эффекта */
+}
 
-  .div1 .categorias__b:hover, .div2 .categorias__b:hover, .div3 .categorias__b:hover, .div4 .categorias__b:hover, .div5 .categorias__b:hover, .div6 .categorias__b:hover, .div7 .categorias__b:hover, .div8 .categorias__b:hover, .div8_1 .categorias__b:hover, .div8_2 .categorias__b:hover,.div8_3 .categorias__b:hover, .div9 .categorias__b:hover, .div10 .categorias__b:hover{
-    transform: scale(1.075);
-  }
+.div1 .categorias__b:hover, .div2 .categorias__b:hover, .div3 .categorias__b:hover, .div4 .categorias__b:hover, .div5 .categorias__b:hover, .div6 .categorias__b:hover, .div7 .categorias__b:hover, .div8 .categorias__b:hover, .div8_1 .categorias__b:hover, .div8_2 .categorias__b:hover,.div8_3 .categorias__b:hover, .div9 .categorias__b:hover, .div10 .categorias__b:hover{
+  transform: scale(1.075);
+}
 
   #CBdiv1{padding: 257px 0 0 30px;}
-  #CBdiv2{padding: 292px 0 0 30px;}
-  #CBdiv3{padding: 289px 0 0 30px;}
-  #CBdiv4{padding: 292px 0 0 30px;}
-  #CBdiv5{padding: 287px 0 0 30px;}
-  #CBdiv6{padding: 287px 0 0 30px;}
-  #CBdiv7{padding: 292px 0 0 30px;}
-  #CBdiv11{padding: 251px 0 0 30px;}
+  #CBdiv2{padding: 252px 0 0 30px;}
+  #CBdiv3{padding: 242px 0 0 30px;}
+  #CBdiv4{padding: 212px 0 0 30px;}
+  #CBdiv5{padding: 245px 0 0 30px;}
+  #CBdiv6{padding: 232px 0 0 30px;}
+  #CBdiv7{padding: 252px 0 0 30px;}
+  #CBdiv8{padding: 252px 0 0 30px;}
+  #CBdiv10{padding: 282px 0 0 30px;}
+  #CBdiv11{padding: 282px 0 0 30px;}
 
 
   .div1 .categorias__b{
-    background-image: url(../../img/Third/1.png);
-    width: 639px;
-    height: 350px;  
+    background-image: url(../../img/Fourth/1.png);
+    width: px;
+    height: 350px; 
   }
 
   .div2 .categorias__b{
-    background-image: url(../../img/Third/2.png);
-    width: 639px;
+    background-image: url(../../img/Fourth/2.png);
+    width: 364px;
     height: 350px; 
   }
 
   .div3 .categorias__b{
-    background-image: url(../../img/Third/3.png);
-    width: 639px;
-    height: 350px;  
+    background-image: url(../../img/Fourth/3.png);
+    width: 364px;
+    height: 350px; 
   }
 
   .div4 .categorias__b{
-    background-image: url(../../img/Third/4.png);
-    width: 639px;
+    background-image: url(../../img/Fourth/4.png);
+    width: 364px;
     height: 350px; 
   }
 
   .div5 .categorias__b{
-    background-image: url(../../img/Third/5.png);
-    width: 639px;
-    height: 350px;  
+    background-image: url(../../img/Fourth/5.png);
+    width: 364px;
+    height: 350px; 
   }
 
   .div6 .categorias__b{
-    background-image: url(../../img/Third/6.png);
-    width: 639px;
+    background-image: url(../../img/Fourth/6.png);
+    width: 536px;
     height: 350px; 
   }
 
   .div7 .categorias__b{
-    background-image: url(../../img/Third/7.png);
+    background-image: url(../../img/Fourth/7.png);
+    width: 639px;
+    height: 350px; 
+  }
+
+  .div8 .categorias__b{
+    background-image: url(../../img/Fourth/8.png);
+    width: 639px;
+    height: 350px; 
+  }
+
+  .div8_1 .categorias__b{
+    background-image: url(../../img/Fourth/1.png);
+    width: px;
+    height: 350px; 
+  }
+
+  .div8_2 .categorias__b{
+    background-image: url(../../img/Fourth/1.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div8_3 .categorias__b{
+    background-image: url(../../img/Fourth/1.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div9 .categorias__b{
+    background-image: url(../../img/Fourth/1.png);
+    width: 364px;
+    height: 350px; 
+  }
+
+  .div10 .categorias__b{
+    background-image: url(../../img/Fourth/1.png);
     width: 563px;
-    height: 390px;  
+    height: 390px; 
   }
 
   .div11{
-    background-image: url(../../img/modules/categories_11.png);
+    background-image: url(../../img/Fourth/10.png);
     width: 714px;
     height: 390px; 
   }
@@ -591,61 +635,100 @@ body {
 
 }
 
-/* engineering */
-
-.engineering-position{
-  margin-top: 48px;
+/* Presentation */
+.presentation{
+  width: 1290px;
+  height: 553px;
+  border-radius: 20px;
+  background-color:  #EEF0F3;
   display: flex;
+  justify-content: space-between;
+}
+
+.presentation__title{
+  color:  #00111C;
+  font-family: RoadRadio;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: normal;    
+  margin: 87px 0 0 48px;
+}
+
+.presentation__text{
+  color:  #00111C;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;    
+  margin: 32px 0 0 48px;
+}
+
+.presentation__img img{
+  margin-top: 48px;
+}
+
+/* Presentation animate */
+.presentation {
+  background-color: #f0f0f0; /* Серый фон */
+  opacity: 0;
+  transform: translateX(100px); /* Смещение вправо */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.presentation__content {
+  opacity: 0;
+  transform: translateX(100px); /* Смещение вправо */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation__content.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.presentation__img {
+  opacity: 0;
+  transform: translateX(100px); /* Смещение вправо */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.presentation__img.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.presentation__sub{
+  border-radius: 20px;
+  background:  #EEF0F3; 
+  padding: 50px;
+  margin-top: 20px;
 
 }
-  .engineering__title{
-    color: var(--text-black, #00111C);
-    font-family: Inter;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px;    
-  }
 
-  .engineering__img{
-    margin-right: 30px;
-  }
-  .engineering__text ul{
-    margin-top: 24px;
-    padding-left: 20px;
-  }
+.presentation__sub__title{
+  color: var(--Orange, #FF6700);
+  font-family: RoadRadio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;  
+}
 
-  .engineering__text ul li{
-    list-style: disc;
-  }
-
-  .engineering__text ul li p{
-    color: var(--text-black, #00111C);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;    
-  }
-
-  .engineering__slyder{
-    position: relative;
-    left: 660px;
-    bottom: 40px;
-    display: inline-flex;
-    border-radius: 57px;
-    background: var(--B2, #EEF0F3);    
-    padding: 4px;
-  }
-
-  .engineering__slyder img{
-    cursor: pointer;
-  }
-/* engineering */
-
-/* engineering animate */
-
-/* engineering animate */
+.presentation__sub__subtitle{
+  color: var(--text-black, #00111C);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 24px;
+}
+/* Presentation an
 
   /* Дорожная карта */
 
@@ -863,9 +946,8 @@ body {
     font-family: Inter;
     font-size: 17px;
     font-weight: 300;
-    line-height: normal;
-    padding: 53px 0 53px 10px;    
-    padding: 33px 0 33px 10px;
+    line-height: normal;   
+    padding: 0px 0 33px 10px;
   }
 
    /* ПРОИЗВОДСТВенно-технический отдел animate*/ 
@@ -1000,6 +1082,12 @@ body {
         transition: transform 0.75s ease-out, opacity 0.75s ease-out;
     }
    /* Проектный ИНСТИТУТ animate */
+
+   .Production__img{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;   
+   }
    /* retention processes */
 /* Just zoom */
  /* Начальное состояние элементов перед анимацией */
@@ -1286,21 +1374,27 @@ body {
   .portfolio__parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     margin: 48px 0 150px 0;
     }
     
-    .portfolio__div1 { grid-area: 1 / 1 / 2 / 2; background-image: url(../../img/Third/Portfolio1.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div2 { grid-area: 1 / 2 / 2 / 3; background-image: url(../../img/Third/portfolio2.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div3 { grid-area: 1 / 3 / 2 / 4; background-image: url(../../img/Third/portfolio3.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div4 { grid-area: 2 / 1 / 3 / 2; background-image: url(../../img/Third/portfolio4.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div5 { grid-area: 2 / 2 / 3 / 3; background-image: url(../../img/Third/portfolio5.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div6 { grid-area: 2 / 3 / 3 / 4; background-image: url(../../img/Third/portfolio6.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div7 { grid-area: 3 / 1 / 4 / 2; background-image: url(../../img/Third/portfolio7.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div8 { grid-area: 3 / 2 / 4 / 3; background-image: url(../../img/Third/portfolio8.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
-    .portfolio__div9 { grid-area: 3 / 3 / 4 / 4; background-image: url(../../img/Third/portfolio9.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div1 { grid-area: 1 / 1 / 2 / 2; background-image: url(../../img/Fourth/p1.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div2 { grid-area: 1 / 2 / 2 / 3; background-image: url(../../img/Fourth/p2.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div3 { grid-area: 1 / 3 / 2 / 4; background-image: url(../../img/Fourth/p3.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div4 { grid-area: 2 / 1 / 3 / 2; background-image: url(../../img/Fourth/p4.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div5 { grid-area: 2 / 2 / 3 / 3; background-image: url(../../img/Fourth/p5.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div6 { grid-area: 2 / 3 / 3 / 4; background-image: url(../../img/Fourth/p6.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div7 { grid-area: 3 / 1 / 4 / 2; background-image: url(../../img/Fourth/p7.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div8 { grid-area: 3 / 2 / 4 / 3; background-image: url(../../img/Fourth/p8.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div9 { grid-area: 3 / 3 / 4 / 4; background-image: url(../../img/Fourth/p9.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div10 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p10.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div11 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p11.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div12 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p12.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div13 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p13.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div14 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p14.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    .portfolio__div15 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p15.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
     .ourAdvantage__parent {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1340,6 +1434,24 @@ body {
         line-height: 24px; 
         margin-top: 17px; 
         margin: 0 0 24px 24px;      
+      }
+
+      .poprikolu{
+        display: flex;
+        padding: 50px;
+        flex-direction: column;
+        border-radius: 20px;
+        background: var(--B2, #EEF0F3);        
+      }
+
+      .poprikolu p{
+        color: var(--text-black, #00111C);
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;   
+        margin-bottom: 48px;      
       }
 
       /* Just text */
