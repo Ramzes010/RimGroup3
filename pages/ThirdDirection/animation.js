@@ -1,3 +1,9 @@
+window.addEventListener('scroll', () => {
+    if (window.scrollX !== 0) {
+        window.scrollTo(0, window.scrollY); // Возвращает скролл по оси X в 0
+    }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll('.animate');
 
@@ -378,21 +384,150 @@ document.addEventListener("DOMContentLoaded", () => {
 //  retention processes animate
 
 // Factory animate
-document.addEventListener("DOMContentLoaded", function() {
-    const factorySection = document.querySelector('.factory');
-    let animationPlayed = false;
-
-    function checkScroll() {
-        const rect = factorySection.getBoundingClientRect();
-        if (!animationPlayed && rect.top <= window.innerHeight && rect.bottom >= 0) {
-            factorySection.classList.add('mb5-active');
-            animationPlayed = true;  // Анимация запускается только один раз
-        }
-    }
-
-    window.addEventListener('scroll', checkScroll);
-});
 // Factory animate
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.getElementById('mb5-title');
+    const images = document.querySelectorAll('.info-content__img');
+
+    const observerOptions = {
+        threshold: 0.1, // Анимация сработает, когда 10% элемента будет видно
+    };
+
+    // Функция для добавления класса "visible" к заголовку и изображениям
+    const animateTitle = () => {
+        title.classList.add('visible');
+    };
+
+    // Используем IntersectionObserver для запуска анимации заголовка при скролле
+    const titleObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateTitle();
+                observer.unobserve(entry.target); // Останавливаем наблюдение после срабатывания
+            }
+        });
+    }, observerOptions);
+
+    // Наблюдаем за заголовком, так как он появляется первым
+    titleObserver.observe(title);
+
+    // Используем IntersectionObserver для запуска анимации изображений при скролле
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Останавливаем наблюдение после срабатывания
+            }
+        });
+    }, observerOptions);
+
+    // Наблюдаем за каждым изображением
+    images.forEach(img => {
+        imageObserver.observe(img);
+    });
+});
+
+// Factory animate
+// Factory animate
+
+// Factory animate 2
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.querySelectorAll('.factory__title');
+    const blocks = document.querySelectorAll('.factory__block');
+    const blockTitles = document.querySelectorAll('.factory__block__title');
+    const blockSubtitles = document.querySelectorAll('.factory__block__subtitle');
+    const images = document.querySelectorAll('.factory__img');
+
+    const observerOptions = {
+        threshold: 0.1, // Анимация сработает, когда 10% элемента будет видно
+    };
+
+    const animateElement = (element, observer) => {
+        element.classList.add('visible');
+        observer.unobserve(element); // Останавливаем наблюдение после срабатывания
+    };
+
+    // Создаем наблюдателя для каждого типа элементов
+    const titleObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateElement(entry.target, observer);
+            }
+        });
+    }, observerOptions);
+
+    const blockObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateElement(entry.target, observer);
+            }
+        });
+    }, observerOptions);
+
+    const textObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateElement(entry.target, observer);
+            }
+        });
+    }, observerOptions);
+
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateElement(entry.target, observer);
+            }
+        });
+    }, observerOptions);
+
+    // Применяем наблюдатели к соответствующим элементам
+    title.forEach(title => titleObserver.observe(title));
+    blocks.forEach(block => blockObserver.observe(block));
+    blockTitles.forEach(blockTitle => textObserver.observe(blockTitle));
+    blockSubtitles.forEach(blockSubtitle => textObserver.observe(blockSubtitle));
+    images.forEach(image => imageObserver.observe(image));
+});
+// Factory animate 2
+// listOfServices
+document.addEventListener("DOMContentLoaded", () => {
+    const title = document.querySelector('.title__center h2');
+    const warrantyTitles = document.querySelectorAll('.warranty__title');
+    const serviceTitles = document.querySelectorAll('.listOfServices__title');
+    const serviceContent = document.querySelectorAll('.listOfServices__content p');
+    const serviceImages = document.querySelectorAll('.listOfServices__img img');
+    const warrantySections = document.querySelectorAll('.listOfServices__warranty__title, .listOfServices__warranty__subtitle');
+
+    const observerOptions = {
+        threshold: 0.1, // Анимация сработает, когда 10% элемента будет видно
+    };
+
+    const animateElement = (element, observer) => {
+        element.classList.add('visible');
+        observer.unobserve(element); // Останавливаем наблюдение после срабатывания
+    };
+
+    // Создаем наблюдателя для каждого типа элементов
+    const createObserver = (elements) => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateElement(entry.target, observer);
+                }
+            });
+        }, observerOptions);
+
+        elements.forEach(element => observer.observe(element));
+    };
+
+    // Применяем наблюдатели к соответствующим элементам
+    createObserver([title]);
+    createObserver(warrantyTitles);
+    createObserver(serviceTitles);
+    createObserver(serviceContent);
+    createObserver(serviceImages);
+    createObserver(warrantySections);
+});
+// listOfServices
 
 // Функция для проверки, виден ли элемент на экране
 function isElementInViewport(el) {

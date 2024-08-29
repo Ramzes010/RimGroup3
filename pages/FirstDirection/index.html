@@ -349,7 +349,7 @@
                         <!-- Заголовок с новым ID -->
                         <h2 class="title" id="mb5-title">завод <br> Оборудование, используемое на <br> заводе для выпуска продукции</h2>
                     
-                        <!-- Контейнеры изображений с новыми ID -->
+                        
                         <div class="info-content__img" id="mb5-images-0">
                             <img id="mb32" src="../../img/info-content__24.png" alt="../../img/info-content__24">
                             <img id="mb32" src="../../img/info-content__25.png" alt="../../img/info-content__25">
@@ -583,23 +583,31 @@
 
                     <div class="portfolio">
                         <div class="portfolio__parent">
-                            <div class="portfolio__div1"> </div>
-                            <div class="portfolio__div2"> </div>
-                            <div class="portfolio__div3"> </div>
-                            <div class="portfolio__div4"> </div>
-                            <div class="portfolio__div5"> </div>
-                            <div class="portfolio__div6"> </div>
-                            <div class="portfolio__div7"> </div>
-                            <div class="portfolio__div8"> </div>
-                            <div class="portfolio__div9"> </div>
-                            <div class="portfolio__div10"> </div>
-                            <div class="portfolio__div11"> </div>
-                            <div class="portfolio__div12"> </div>
-                            <div class="portfolio__div13"> </div>
-                            <div class="portfolio__div14"> </div>
-                            <div class="portfolio__div15"> </div>
-                            <div class="portfolio__div16"> </div>
-                            </div>
+                            <div class="portfolio__div1" data-image-url="../../img/modal__window/m1.png"></div>
+                            <div class="portfolio__div2" data-image-url="../../img/portfolio__img-2.png"></div>
+                            <div class="portfolio__div3" data-image-url="../../img/portfolio__img-3.png"></div>
+                            <div class="portfolio__div4" data-image-url="../../img/portfolio__img-4.png"></div>
+                            <div class="portfolio__div5" data-image-url="../../img/portfolio__img-5.png"></div>
+                            <div class="portfolio__div6" data-image-url="../../img/portfolio__img-6.png"></div>
+                            <div class="portfolio__div7" data-image-url="../../img/portfolio__img-7.png"></div>
+                            <div class="portfolio__div8" data-image-url="../../img/portfolio__img-8.png"></div>
+                            <div class="portfolio__div9" data-image-url="../../img/portfolio__img-9.png"></div>
+                            <div class="portfolio__div10" data-image-url="../../img/portfolio__img-10.png"></div>
+                            <div class="portfolio__div11" data-image-url="../../img/portfolio__img-11.png"></div>
+                            <div class="portfolio__div12" data-image-url="../../img/portfolio__img-12.png"></div>
+                            <div class="portfolio__div13" data-image-url="../../img/portfolio__img-13.png"></div>
+                            <div class="portfolio__div14" data-image-url="../../img/portfolio__img-14.png"></div>
+                            <div class="portfolio__div15" data-image-url="../../img/portfolio__img-15.png"></div>
+                            <div class="portfolio__div16" data-image-url="../../img/portfolio__img-16.png"></div>
+                        </div>
+                    </div>
+
+                    <div id="modal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modal-img">
+                        <div class="modal-caption" id="modal-caption"></div>
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
                     </div>
 
                     <h2 class="title">Наши ПРЕИМУЩЕСТВА </h2>
@@ -789,6 +797,7 @@
 <script src="animation.js"></script>
 <script src="../../JS/zoomCursor.js"></script>
 <script src="../../JS/scale.js"></script>
+<script src="../../JS/modal.js"></script>
 <script>
      const countryCodeSelect = document.getElementById('countryCode');
     const phoneNumberInput = document.getElementById('phoneNumber');
