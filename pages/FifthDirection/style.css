@@ -1393,6 +1393,113 @@ body {
     .portfolio__div13 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p13.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
     .portfolio__div14 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p14.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
     .portfolio__div15 { grid-area: 3 / 0 / 4 / 4; background-image: url(../../img/Fourth/p15.png); background-repeat: no-repeat; background-size: cover; background-position: center; width: 423px; height: 241px;}
+    
+    /* Modal */
+    .portfolio__parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      margin: 48px 0 150px 0;
+  }
+  
+  .portfolio__parent div {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 241px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+      display: none; 
+      position: fixed; 
+      z-index: 1000; 
+      padding-top: 60px; 
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%; /* Изображение займет 80% ширины родительского элемента */
+    max-width: 100%;
+  }
+  
+  /* Caption of Modal Image (Image Text) */
+  .modal-caption {
+      margin: auto;
+      display: block;
+      width: 80%;
+      max-width: 700px;
+      text-align: center;
+      color: #ccc;
+      padding: 10px 0;
+      height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, .modal-caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+      from { transform: scale(0) }
+      to { transform: scale(1) }
+  }
+  
+  /* The Close Button */
+  .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+  }
+  
+  .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+    /* Modal */
+    
     .ourAdvantage__parent {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -1626,6 +1733,20 @@ body {
         line-height: normal;  
         margin-top: 24px;      
       }
+
+        /* ask id */
+        #askContent h6{
+          color: #FFF;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          position: relative;
+          top: 80px;
+          right: 100px;
+        }
+        /* ask id */
 
     .form-container input, .form-container select {
         width: calc(100% - 20px);

@@ -1570,6 +1570,20 @@ body {
         margin-top: 24px;      
       }
 
+        /* ask id */
+        #askContent h6{
+          color: #FFF;
+          font-family: Inter;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          position: relative;
+          top: 80px;
+          right: 100px;
+        }
+        /* ask id */
+
     .form-container input, .form-container select {
         width: calc(100% - 20px);
         padding: 10px;
