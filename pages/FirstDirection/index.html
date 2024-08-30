@@ -585,20 +585,20 @@
                         <div class="portfolio__parent">
                             <div class="portfolio__div1" data-image-url="../../img/modal__window/m1.png"></div>
                             <div class="portfolio__div2" data-image-url="../../img/modal__window/m2.png"></div>
-                            <div class="portfolio__div3" data-image-url="../../img/portfolio__img-3.png"></div>
-                            <div class="portfolio__div4" data-image-url="../../img/portfolio__img-4.png"></div>
-                            <div class="portfolio__div5" data-image-url="../../img/portfolio__img-5.png"></div>
-                            <div class="portfolio__div6" data-image-url="../../img/portfolio__img-6.png"></div>
-                            <div class="portfolio__div7" data-image-url="../../img/portfolio__img-7.png"></div>
-                            <div class="portfolio__div8" data-image-url="../../img/portfolio__img-8.png"></div>
-                            <div class="portfolio__div9" data-image-url="../../img/portfolio__img-9.png"></div>
-                            <div class="portfolio__div10" data-image-url="../../img/portfolio__img-10.png"></div>
-                            <div class="portfolio__div11" data-image-url="../../img/portfolio__img-11.png"></div>
-                            <div class="portfolio__div12" data-image-url="../../img/portfolio__img-12.png"></div>
-                            <div class="portfolio__div13" data-image-url="../../img/portfolio__img-13.png"></div>
-                            <div class="portfolio__div14" data-image-url="../../img/portfolio__img-14.png"></div>
-                            <div class="portfolio__div15" data-image-url="../../img/portfolio__img-15.png"></div>
-                            <div class="portfolio__div16" data-image-url="../../img/portfolio__img-16.png"></div>
+                            <div class="portfolio__div3" data-image-url="../../img/modal__window/m3.png"></div>
+                            <div class="portfolio__div4" data-image-url="../../img/modal__window/m4.png"></div>
+                            <div class="portfolio__div5" data-image-url="../../img/modal__window/m5.png"></div>
+                            <div class="portfolio__div6" data-image-url="../../img/modal__window/m6.png"></div>
+                            <div class="portfolio__div7" data-image-url="../../img/modal__window/m7.png"></div>
+                            <div class="portfolio__div8" data-image-url="../../img/modal__window/m8.png"></div>
+                            <div class="portfolio__div9" data-image-url="../../img/modal__window/m9.png"></div>
+                            <div class="portfolio__div10" data-image-url="../../img/modal__window/m10.png"></div>
+                            <div class="portfolio__div11" data-image-url="../../img/modal__window/m11.png"></div>
+                            <div class="portfolio__div12" data-image-url="../../img/modal__window/m12.png"></div>
+                            <div class="portfolio__div13" data-image-url="../../img/modal__window/m13.png"></div>
+                            <div class="portfolio__div14" data-image-url="../../img/modal__window/m14.png"></div>
+                            <div class="portfolio__div15" data-image-url="../../img/modal__window/m15.png"></div>
+                            <div class="portfolio__div16" data-image-url="../../img/modal__window/m16.png"></div>
                         </div>
                     </div>
 
@@ -698,8 +698,8 @@
                                     <h2 class="ask__text__title">Остались <br> вопросы?</h2>
                                     <p class="ask__text__subtitle">Если сомневаетесь или чтo‑то не поняли, смело <br> оставляйте свой телефон — менеджер <br> перезвонит и поможет вам</p>
                                 </div>
-                                <div class="ask__content">
-                                    <form>
+                                <div class="ask__content" id="askContent">
+                                    <form id="contactForm">
                                         <input class="phone-input-name" type="text" name="name" placeholder="Имя" required>
                                         <div class="phone-input-position">
                                             <div class="phone-input-container">
@@ -709,17 +709,18 @@
                                                     <option value="+44" data-placeholder="+44 9999 999999">🇬🇧 +44</option>
                                                     <!-- Добавьте другие коды стран по необходимости -->
                                                 </select>
-                                                <input  type="tel" id="phoneNumber" placeholder="+7 (999) 999-99-99" required>
+                                                <input type="tel" id="phoneNumber" placeholder="+7 (999) 999-99-99" required>
                                             </div>
                                             <input class="phone-input-email" type="email" name="email" placeholder="E-mail" required>
                                         </div>
                                         
-                                        <a class="link__submit" href="#" type="submit">Получить консультацию</a>
+                                        <button class="link__submit" type="submit">Получить консультацию</button>
                                     </form>
                                     <p class="doc">Нажимая на кнопку, я согласен с <a href="#">обработкой своих персональных данных</a> и <a href="#">договором публичной оферты</a>.</p>
                                 </div>
                             </div>
                         </div>
+                        
                 </div>
             </div>
         </section>
@@ -811,6 +812,14 @@
 
     
     
+</script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // предотвращаем отправку формы
+
+        // Меняем содержимое блока на сообщение об успешной отправке
+        document.getElementById('askContent').innerHTML = '<h2>Отправлено успешно</h2><p>Спасибо! Мы скоро с вами свяжемся.</p>';
+    });
 </script>
 </body>
 </html>
