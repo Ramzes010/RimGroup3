@@ -8,6 +8,14 @@
 
 /* АЙдишки */
 
+#killmb{
+  margin: 0;
+}
+
+#mb10{
+  margin-bottom: 10px;
+}
+
 #mb20{
   margin-bottom: 20px;
 }
@@ -63,6 +71,7 @@
 .mr10{
   margin-right: 10px;
 }
+
 
 #center{
   text-align: center;
@@ -419,8 +428,79 @@ body {
   line-height: normal;  
   padding: 30px;
   margin-top: 10px;
-
 }
+
+.presentation{
+  border-radius: 20px;
+  background:  #EEF0F3;
+  padding: 48px 0;
+  margin-bottom: 150px;
+}
+
+.presentation-position{
+  display: flex;
+}
+
+.presentation__img{
+  margin-right: 48px;
+}
+
+.presentation-position h3, 
+.text__presentation h3,
+.scheme h3{
+  color: var(--text-black, #00111C);
+  font-family: RoadRadio;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal; 
+  margin-bottom: 24px; 
+}
+
+.presentation-position p, 
+.text__presentation p,
+.scheme p{
+  color:  #00111C;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.text__presentation{
+  border-radius: 20px;
+  background:  #EEF0F3;  
+  padding: 50px;
+  margin-bottom: 150px;
+}
+
+.scheme{
+  border-radius: 20px;
+  background:  #EEF0F3;
+  padding: 50px;
+  margin-bottom: 150px;
+}
+
+#scheme__p{
+  padding: 125px;
+}
+
+.scheme img{
+  margin-bottom: 48px;
+}
+
+.scheme ul{
+  margin: 16px;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.scheme ul li{
+  list-style: disc;
+}
+
 
  /* Подвал */
 
